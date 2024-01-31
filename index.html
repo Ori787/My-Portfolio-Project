@@ -25,7 +25,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: fixed; width: 100vw;">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: fixed; width: 100vw; z-index: 1;">
       <div class="container-fluid">
         <button
           class="navbar-toggler" style="width:100vw;"
@@ -74,49 +74,17 @@
             </p>
         </div>
     </h1>
-    <h2>
-        <div class="iconbar">
-            <img src="./assets/es6.jpg" alt="es6">
-            <img src="./assets/react.jpg" alt="react">
-            <img src="./assets/jsicon.jpg" alt="js">
-            <img src="./assets/bootstrapicon.jpg" alt="bootstrapicon">
-            <img src="./assets/cssicon.jpg" alt="css">
-            <img src="./assets/oop.jpg" alt="oop">
-            <img src="./assets/node.jpg" alt="node">
-            <img src="./assets/api.jpg" alt="api">
-            <img src="./assets/typescript.jpg" alt="typescript">
-        </div>
-    </h2>
     </a>
 <a id="about">
     <article>
         <div class="intro">
             <img src="./assets/anonymousicon.jpg" alt="icon">
-            <h1>Self Introduction</h1>
+            <h1 class="heading-secondary">Self Introduction</h1>
         </div>
         <div class="sub-intro">
-            <h2>Hello, My name is Ori!<br>
-                I'm a Full stack junior web developer from Rishon Lezion. After a 7-month journey of web development
-                studies, I'm already eager to land my first Full stack job!<br>
-                The skills I bring to the table are:<br>
-                <ol>
-                    <li>CSS3</li>
-                    <li>HTML5</li>
-                    <li>Bootstrap</li>
-                    <li>MUI</li>
-                    <li>Sass</li>
-                    <li>JavaScript</li>
-                    <li>Typescript</li>
-                    <li>React</li>
-                    <li>Redux</li>
-                    <li>Restful API</li>
-                    <li>MongoDB</li>
-                    <li>MySQL</li>
-                    <li>Node.js</li>
-                    <li>WordPress</li>
-                    <li>Express.js</li>
-
-                </ol>
+            <h2 class="text">Hello, My name is Ori!<br>
+           <br>
+I'm a skilled Full Stack Web Developer proficient in JavaScript, TypeScript, React, Redux, Node.js, and a plethora of other technologies. <br> <br> Equipped with a strong foundation in delivering top-notch projects within stringent timelines. <br> <br> Acknowledged for proactive problem-solving abilities and an unwavering dedication to excellence. <br> <br> Eager to leverage my skills and determination to thrive in my next professional role.
             </h2>
         </div><br>
         </a>
@@ -130,7 +98,7 @@
     </a>
     <a id="gallery">
     <section>
-        <h1>
+        <h1 class="heading-secondary">
             Landing Page Projects
         </h1>
     </section>
@@ -180,24 +148,24 @@
 
     </div>
     </a>
-
-    <h1 class="js-caption">JavaScript Projects</h1>
-
+<br>
+    <h1 class="heading-secondary" style="display: flex; justify-content: center;">JavaScript Projects</h1>
+    <br>
  <div class="js-cardcontainer1">
         <div class="card">
-            <img src="./JavaScript Projects/assets/tic-tac-toe.jpg" alt="let-us" style="width:100%">
+            <img src="./JavaScript Projects/assets/tic-tac-toe.jpg" alt="let-us">
             <h1>Tic-Tac-Toe</h1>
             <p>Grab a friend to play with you and let's see <br> who the real winner is!</p>
             <a href="./JavaScript Projects/XO-game-mid-page-template/med-level-template.html"><button>To project page</button></a>
         </div>
         <div class="card">
-            <img src="./JavaScript Projects/assets/quiz-game.jpg" alt="quiz" style="width:100%">
+            <img src="./JavaScript Projects/assets/quiz-game.jpg" alt="quiz">
             <h1>Geography Quiz</h1>
             <p>Do you think you're good at geography? Think again and test yourself with this quiz.</p>
             <a href="./JavaScript Projects/quiz-app-mid-page-template/med-level-template.html"><button>To project page</button></a>
         </div>
         <div class="card">
-            <img src="./JavaScript Projects/assets/pokedex.jpg" alt="Pokedex" style="width:100%">
+            <img src="./JavaScript Projects/assets/pokedex.jpg" alt="Pokedex">
             <h1>Pokedex Website</h1>
             <p>An API-Based website to look for basic information about the Pokemon characters</p>
             <a href="./JavaScript Projects/pokedex-api-mid-page-template/med-level-template.html"><button>To project page</button></a>
@@ -272,8 +240,30 @@
     <div class="copyright">
 <p>קרדיט לאורי חיט</p>
     </div>
-    <div class="endd">
-
-    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const subIntro = document.querySelector(".sub-intro");
+      
+          function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+              rect.top >= 0 &&
+              rect.left >= 0 &&
+              rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+              rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+          }
+      
+          function revealSubIntro() {
+            if (isInViewport(subIntro)) {
+              subIntro.classList.add("visible");
+              window.removeEventListener("scroll", revealSubIntro);
+            }
+          }
+      
+          window.addEventListener("scroll", revealSubIntro);
+          revealSubIntro();
+        });
+      </script>
 </body>
 </html>
