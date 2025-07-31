@@ -61,58 +61,49 @@ img {
   display: block;
 }
 
-/* ====== BOTTOM BAR ====== */
 .bottombar {
-  width: 100%;
-  background-color: #ffffff;
-  color: #000;
   position: fixed;
   bottom: 0;
   left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   z-index: 999;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1vh 2vw;
-  box-sizing: border-box;
 }
 
-.bottombar .content {
-  display: flex;
-  align-items: center;
-  gap: 2vw;
-  flex-wrap: nowrap;
-}
-
-.bottombar .imgss {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 3vw;
-}
-
-.bottombar .imgss img {
-  width: 8vw;
-  height: 8vw;
-  max-width: 60px;
-  max-height: 60px;
-  min-width: 40px;
-  min-height: 40px;
-  border-radius: 50%;
-  padding: 5px;
+.bar-btn {
   background-color: #f0f0f0;
-  transition: transform 0.2s ease;
-}
-
-.bottombar .imgss img:hover {
-  transform: scale(1.1);
-}
-
-.bottombar .subtitle {
-  font-size: 1rem;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #333;
-  white-space: nowrap;
+  font-size: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.bar-btn:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .bottombar {
+    height: 55px;
+  }
+
+  .bar-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
 }
 
 /* ====== MEDIA QUERY למובייל ====== */
