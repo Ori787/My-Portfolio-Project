@@ -73,7 +73,7 @@ body h1 div p {
   margin-top: 14vh;
 }
 
-.sub-intro {
+article .sub-intro {
   width: 60%;
   font-size: 1.2rem;
   margin: 2rem auto;
@@ -445,7 +445,7 @@ form input {
 
 
 @media only screen and (max-width: 768px) {
-   .sub-intro {
+  article .sub-intro {
     width: 85%;
     font-size: 0.8rem;
     margin-left: 3vw;
