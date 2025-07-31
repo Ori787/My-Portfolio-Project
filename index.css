@@ -430,6 +430,23 @@ form input {
     margin-left: 3vw;
   }
 
+  @media only screen and (max-width: 768px) {
+  .bottombar .imgss img {
+    width: 12vw;
+    height: 12vw;
+  }
+
+  .bottombar .subtitle {
+    font-size: 0.8rem;
+    margin-top: 1vh;
+  }
+
+  .bottombar .content-wrapper {
+    flex-direction: column;
+    gap: 1vh;
+  }
+}
+
   .cvbutton button {
     width: 65vw;
     font-size: 0.8rem;
