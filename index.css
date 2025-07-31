@@ -5,7 +5,7 @@
   color: #000;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -13,24 +13,21 @@
   left: 0;
   padding: 1vh 0;
   box-sizing: border-box;
-  z-index: 1000;
 }
 
 .bottombar .imgss {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
-  gap: 5vw;
+  gap: 10%;
 }
 
 .bottombar .imgss img {
-  width: 10vw;
-  height: 10vw;
-  max-width: 60px;
-  max-height: 60px;
+  width: 12vw;
+  height: 12vw;
   border-radius: 50%;
-  padding: 6px;
+  padding: 5px;
   background-color: #f0f0f0;
   transition: transform 0.2s ease;
 }
@@ -40,17 +37,18 @@
 }
 
 .bottombar .subtitle {
-  font-size: 0.7rem;
+  margin-top: 0.5vh;
+  font-size: 0.75rem;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   color: #666;
   text-align: center;
-  margin-top: 0.5vh;
 }
 
-@media only screen and (max-width: 768px) {
+/* רספונסיביות לפלאפונים קטנים יותר */
+@media screen and (max-width: 480px) {
   .bottombar {
     height: 18vh;
   }
@@ -62,24 +60,5 @@
 
   .bottombar .subtitle {
     font-size: 0.65rem;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .bottombar {
-    height: 20vh;
-  }
-
-  .bottombar .imgss {
-    gap: 8vw;
-  }
-
-  .bottombar .imgss img {
-    width: 16vw;
-    height: 16vw;
-  }
-
-  .bottombar .subtitle {
-    font-size: 0.6rem;
   }
 }
