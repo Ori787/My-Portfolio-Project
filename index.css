@@ -74,16 +74,15 @@ body h1 div p {
 }
 
 .sub-intro {
-
-  background-color: black;
-  width: 100vw;
-  height: 60vh;
-  display: inline-block;
-  justify-content: center;
-  color:rgb(31, 200, 31);
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
+  width: 60%;
+  font-size: 1.2rem;
+  margin: 2rem auto;
+  line-height: 1.6;
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 10px;
 }
+
 
 
 .sub-intro.visible {
@@ -446,7 +445,7 @@ form input {
 
 
 @media only screen and (max-width: 768px) {
-  article .sub-intro {
+   .sub-intro {
     width: 85%;
     font-size: 0.8rem;
     margin-left: 3vw;
