@@ -40,6 +40,36 @@ body nav div p {
   margin-left: 3vw;
 }
 
+/* טקסט פרופיל */
+.navbar-profile-name {
+  font-family: 'Satisfy', cursive;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 600;
+  user-select: none;
+}
+
+/* לינקים */
+.nav-link {
+  font-size: 1.1rem;
+  transition: color 0.25s ease;
+}
+
+.nav-link:hover {
+  color: #0dcaf0;
+}
+
+/* כפתור הטוגל למובייל */
+.navbar-toggler {
+  border: none;
+}
+
+/* הוספת מעט ריווח לצד ימין ושמאל */
+.navbar .container-fluid {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .headingg {
   width: 100vw;
   height: 50vh;
