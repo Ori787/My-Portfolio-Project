@@ -372,7 +372,7 @@ form input {
 /* ======= שדרוג bottom bar ======= */
 .bottombar {
   width: 100vw;
-  height: 12vh;
+  height: 5vh;
   background-color: #2a2b39;
   color: #fff;
   display: flex;
