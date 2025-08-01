@@ -44,9 +44,22 @@ body nav div p {
 .navbar-profile-name {
   font-family: 'Satisfy', cursive;
   font-size: 1.5rem;
-  color: #fff;
+  color: #fff;          /* לבן */
   font-weight: 600;
   user-select: none;
+}
+
+.navbar-profile-name a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.navbar-brand img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;    /* תמונה לא מתכווצת */
+  border: 2px solid #fff; /* מסגרת לבנה */
 }
 
 /* לינקים */
