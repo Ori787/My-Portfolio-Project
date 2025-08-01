@@ -451,8 +451,8 @@ form input {
   font-size: 0.9rem;
   color: #ccc;
   text-align: center;
-  margin-left: 2vw;
-  margin-right: 2vw;
+  margin-left: 0.1vw;
+  margin-right: 0.1vw;
 }
 
 /* ======= MEDIA QUERY ======= */
