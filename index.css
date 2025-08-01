@@ -55,11 +55,11 @@ body nav div p {
 }
 
 a.navbar-brand img {
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  object-fit: cover;    /* תמונה לא מתכווצת */
-  border: 2px solid #fff; /* מסגרת לבנה */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* עיגול מלא */
+  object-fit: cover;
+  border: 2px solid #fff; /* מסגרת לבנה יפה (אופציונלי) */
 }
 
 /* לינקים */
@@ -75,6 +75,9 @@ a.navbar-brand img {
 /* כפתור הטוגל למובייל */
 .navbar-toggler {
   border: none;
+  box-shadow: none;
+  margin-left: auto;
+  margin-right: 1rem; 
 }
 
 /* הוספת מעט ריווח לצד ימין ושמאל */
