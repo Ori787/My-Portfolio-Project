@@ -32,22 +32,22 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top shadow-sm">
-  <div class="container-fluid">
-    <!-- לוגו/פרופיל -->
-    <a class="navbar-brand d-flex align-items-center gap-2" href="#profilepic">
-      <img src="./assets/Profile_Pic.jpg" alt="Profile pic" class="rounded-circle" width="40" height="40">
-      <span class="fw-semibold">Ori Hayat</span>
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+    <!-- אזור הפרופיל -->
+    <a href="#profilepic" class="d-flex align-items-center gap-3 ms-3">
+      <img src="./assets/Profile_Pic.jpg" alt="Profile pic" class="rounded-circle border border-light" width="55" height="55" style="object-fit: cover;">
+      <span class="navbar-profile-name">Ori Hayat</span>
     </a>
 
-    <!-- כפתור תפריט במסכים קטנים -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    <!-- כפתור תפריט למובייל -->
+    <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- לינקים -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav gap-3">
+    <!-- תפריט לינקים -->
+    <div class="collapse navbar-collapse justify-content-end me-3" id="navbarNav">
+      <ul class="navbar-nav gap-4">
         <li class="nav-item"><a class="nav-link active" href="#main">Main</a></li>
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
