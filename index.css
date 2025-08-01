@@ -349,6 +349,7 @@ body nav div img {
   overflow: hidden;
   white-space: nowrap;
   resize: none;
+  opacity: 0.4;
 }
 
 .button {
