@@ -341,15 +341,14 @@ body nav div img {
 }
 
 .card {
-  width: 20vw;
-  height: 30%;
+  width: 30vw;
+  height: 35vh;
   margin: auto;
   text-align: center;
   font-family: arial;
   overflow: hidden;
   white-space: nowrap;
   resize: none;
-  opacity: 0.4;
 }
 
 .button {
@@ -364,20 +363,7 @@ body nav div img {
   font-size: 1rem;
   border-radius: 15px;
   margin-bottom: 4vh;
-}
-
-button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: rgb(34, 128, 210);
-  text-align: center;
-  cursor: pointer;
-  width: 65%;
-  font-size: 1rem;
-  border-radius: 15px;
-  margin-bottom: 4vh;
+  opacity: 0.4;
 }
 
 .cardcontainer1 div h1,
@@ -466,15 +452,6 @@ form input {
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.5);
   border-top: 1px solid #444;
 }
-
-/*
-
-.bottombar .imgss {
-  display: flex;
-  gap: 4vw;
-}
-
-*/
 
 .bottombar .imgss img {
   width: 6vw;
