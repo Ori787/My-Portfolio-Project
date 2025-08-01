@@ -207,8 +207,8 @@ body article div h2 {
   font-weight: 200;
 }
 
-.cardcontainer1,
-.js-cardcontainer1 {
+/* --- כאן התחילו השינויים --- */
+.cardcontainer1 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -217,13 +217,22 @@ body article div h2 {
   margin-right: 10vw;
 }
 
+.js-cardcontainer1,
+.js-cardcontainer2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 5vw;
+  margin-bottom: 3vh;
+}
+
 .cardcontainer1 p,
 .js-cardcontainer1 p {
   font-size: 0.7rem;
 }
 
-.cardcontainer2,
-.js-cardcontainer2 {
+.cardcontainer2 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -256,6 +265,29 @@ body nav div img {
   height: 6vh;
   border-radius: 50%;
   margin-top: 0.3vh;
+}
+
+.js-cardcontainer1 .card,
+.js-cardcontainer2 .card {
+  width: 140px;
+  height: auto;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.js-cardcontainer1 .card:hover,
+.js-cardcontainer2 .card:hover {
+  transform: translateY(-5px);
+}
+
+.js-cardcontainer1 .card button,
+.js-cardcontainer2 .card button {
+  width: 70%;
+  margin-bottom: 15px;
 }
 
 .js-cardcontainer1 .card img {
@@ -476,6 +508,18 @@ form input {
   .bottombar .subtitle {
     font-size: 0.8rem;
     margin-top: 1vh;
+  }
+
+  .js-cardcontainer1,
+  .js-cardcontainer2 {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 2vw;
+  }
+
+  .js-cardcontainer1 .card,
+  .js-cardcontainer2 .card {
+    width: 80vw;
   }
 }
 
