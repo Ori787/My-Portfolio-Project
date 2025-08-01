@@ -420,10 +420,14 @@ form input {
   border-top: 1px solid #444;
 }
 
+/*
+
 .bottombar .imgss {
   display: flex;
   gap: 4vw;
 }
+
+*/
 
 .bottombar .imgss img {
   width: 6vw;
