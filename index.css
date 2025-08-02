@@ -547,7 +547,8 @@ form input {
 
   .js-cardcontainer1 .card,
   .js-cardcontainer2 .card {
-    width: 80vw;
+    width: 30vw;
+    height: 40vh;
   }
 }
 
